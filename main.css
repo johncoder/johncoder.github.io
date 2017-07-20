@@ -146,6 +146,7 @@ label {
     display: block;
     margin-top: 1rem;
     font-weight: 500;
+    color: #60979a;
 }
 
 position {
@@ -158,12 +159,19 @@ position {
 position period {
     position: absolute;
     left: 0;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    margin-top: -.1rem;
 }
 
 position period current {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     font-size: .5rem;
+    margin-top: 0rem;
+    display: block;
+    color: #60979a;
 }
 
 position h4 {
@@ -172,9 +180,10 @@ position h4 {
 
 position h4 title {
     display: inline-block;
-    font-weight: 300;
+    font-weight: 500;
     position: absolute;
     right: 0;
+    color: #60979a;
 }
 
 position p {
