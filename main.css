@@ -18,6 +18,10 @@ body {
   color: #545454;
 }
 
+a, a:visited, a:hover {
+    color: inherit;
+}
+
 resume {
   display: block;
   height: 11in;
@@ -196,4 +200,11 @@ buzzwords span {
     color: #ececec;
     background-color: #60979a;
     margin-bottom: .25rem;
+}
+
+footer {
+    text-align: right;
+    font-size: .6rem;
+    margin-top: 1rem;
+    margin-right: 1.75rem;
 }
