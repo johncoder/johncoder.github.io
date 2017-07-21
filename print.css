@@ -23,3 +23,8 @@ resume {
     margin: 0;
     height: 10.5in;
 }
+
+buzzwords span {
+    color: #545454;
+    border: 1px solid #ececec;
+}
