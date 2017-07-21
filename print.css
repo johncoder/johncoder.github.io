@@ -1,0 +1,25 @@
+header,
+header h3,
+header svg,
+svg,
+header subtitle,
+header aside,
+header ul li {
+    color: #545454;
+    fill: #545454;
+    stroke: #545454;
+}
+
+footer {
+    display: none;
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
+
+resume {
+    margin: 0;
+    height: 10.5in;
+}
