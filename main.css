@@ -167,8 +167,10 @@ position period current {
 h4 position {
     display: inline-block;
     font-weight: 500;
-    position: absolute;
     right: 0;
+}
+
+h4 position jobtitle {
     color: #60979a;
 }
 
