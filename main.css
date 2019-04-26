@@ -151,20 +151,8 @@ label {
     color: #60979a;
 }
 
-position {
-    position: relative;
-    display: block;
-    font-size: .75rem;
-    padding-left: 3.5rem;
-}
-
 position period {
-    position: absolute;
-    left: 0;
-    font-size: 1.1rem;
-    margin: 0;
-    padding: 0;
-    margin-top: -.1rem;
+    font-size: .75rem;
 }
 
 position period current {
@@ -176,23 +164,12 @@ position period current {
     color: #60979a;
 }
 
-position h4 {
-    margin-bottom: .5rem;
-}
-
-position h4 title {
+h4 position {
     display: inline-block;
     font-weight: 500;
     position: absolute;
     right: 0;
     color: #60979a;
-}
-
-position p {
-    line-height: 1rem;
-    font-size: .7rem;
-    margin-top: 0rem;
-    margin-bottom: .0rem;
 }
 
 experience ul {
@@ -287,7 +264,7 @@ credits {
 	opacity: .6;
     }
 
-    position h4 title {
+    h4 position {
         display: block;
         position: relative;
     }
