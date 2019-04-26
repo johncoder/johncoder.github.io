@@ -215,7 +215,8 @@ objective ul li {
 buzzwords {
 }
 
-buzzwords span {
+buzzwords span,
+.buzzword {
     display: inline-block;
     font-size: .7rem;
     padding: .25rem;
