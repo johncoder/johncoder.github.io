@@ -164,6 +164,10 @@ position period current {
     color: #60979a;
 }
 
+experience h4 {
+    position: relative;
+}
+
 h4 position {
     display: inline-block;
     font-weight: 500;
