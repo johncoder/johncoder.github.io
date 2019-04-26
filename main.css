@@ -170,6 +170,7 @@ experience h4 {
 
 h4 position {
     display: inline-block;
+    position: absolute;
     font-weight: 500;
     right: 0;
 }
