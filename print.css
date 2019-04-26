@@ -21,10 +21,13 @@ footer {
 
 resume {
     height: 10.5in;
+    width: auto;
     box-shadow: none;
+    padding: .5rem;
 }
 
-buzzwords span {
+buzzwords span,
+.buzzword {
     color: #545454;
     border: 1px solid #ececec;
 }
