@@ -225,6 +225,10 @@ buzzwords span,
     margin-bottom: .25rem;
 }
 
+experience .buzzword {
+    margin-right: 1rem;
+}
+
 footer {
     text-align: right;
     font-size: .6rem;
