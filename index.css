@@ -96,10 +96,25 @@ aside.outer.bottom.right {
     vertical-align: middle;
 }
 
-nav {
+main {
     position: fixed;
-    left: 25%;
-    top: 33%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+
+main > * {
+    min-width: 33%;
+}
+
+nav {
     font-size: 3rem;
 }
 
@@ -118,12 +133,6 @@ ul {
     list-style: none;
 }
 
-.about-me {
-    position: fixed;
-    left: 55%;
-    top: 33%;
-}
-
 .about-me h1 + p {
     margin-top: 0;
     text-transform: lowercase;
@@ -132,8 +141,6 @@ ul {
 .about-me ul {
     margin-top: 2rem;
     display: flex;
-    /* justify-content: space-between; */
-    
 }
 
 .about-me ul li {
@@ -152,6 +159,15 @@ ul {
 	margin: 0;
 	min-height: auto;
 	overflow: scroll;
+    }
+
+    main {
+	position: relative;
+	display: block;
+    }
+
+    main > * {
+	min-width: auto;
     }
 
     aside.outer {
@@ -177,10 +193,6 @@ ul {
 	display: block;
 	width: 100%;
 	padding: 2rem;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
     }
 }
 
@@ -191,12 +203,22 @@ ul {
 	min-height: auto;
     }
 
+    main {
+	position: relative;
+	display: block;
+    }
+
+    main > * {
+	min-width: auto;
+    }
+
     aside.outer.top.left,
     aside.outer.bottom.left {
 	transform: rotate(0deg);
     }
 
     aside.outer {
+	position: relative;
 	display: block;
 	padding: 2rem;
     }
@@ -211,9 +233,5 @@ ul {
 	display: block;
 	width: 100%;
 	padding: 2rem;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
     }
 }
