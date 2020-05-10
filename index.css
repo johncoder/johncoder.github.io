@@ -151,6 +151,24 @@ ul {
 	padding: 0;
 	margin: 0;
 	min-height: auto;
+	overflow: scroll;
+    }
+
+    aside.outer {
+	position: relative;
+	display: block;
+	padding: 2rem;
+    }
+
+    aside.outer.top.left,
+    aside.outer.bottom.left {
+	transform: rotate(0deg);
+    }
+
+    aside.outer.bottom.right {
+	position: fixed;
+	top: 0;
+	right: 0;
     }
 
     nav,
@@ -159,6 +177,10 @@ ul {
 	display: block;
 	width: 100%;
 	padding: 2rem;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
     }
 }
 
@@ -169,11 +191,29 @@ ul {
 	min-height: auto;
     }
 
+    aside.outer.top.left,
+    aside.outer.bottom.left {
+	transform: rotate(0deg);
+    }
+
+    aside.outer {
+	display: block;
+	padding: 2rem;
+    }
+
+    aside.left {
+	transform: rotate(0deg);
+    }
+
     nav,
     .about-me {
 	position: relative;
 	display: block;
 	width: 100%;
 	padding: 2rem;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
     }
 }
