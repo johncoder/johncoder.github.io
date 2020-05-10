@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,500');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,900');
+/* @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,500'); */
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -12,10 +13,12 @@ html {
 }
 
 body {
-  background-color: #ccc;
-  font-family: 'Work Sans', sans-serif;
+    /* background-color: #E5E9F0; */
+    background: linear-gradient(145deg, #313844, #292f3a);    
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  color: #545454;
+  color: #3B4252;
+  margin-top: 5rem;
 }
 
 a, a:visited, a:hover {
@@ -28,10 +31,13 @@ resume {
   /*height: 11in;*/
   width: 8.5in;
   /*border: 1px solid rgba(0, 0, 0, .2);*/
-  background-color: #ececec;
+  background-color: #ECEFF4;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, .2); */
+  /* box-shadow: 0px 0px 20px #2E344033; */
+  box-shadow:  41px 41px 59px #21252d, 
+             -41px -41px 59px #3b4353;
   margin-bottom: 2rem;
   padding-bottom: .5rem;
 }
@@ -39,7 +45,9 @@ resume {
 header {
   /* background-color: rgba(193, 78, 15, .6); */
   /* background-color: rgba(255, 128, 54, 1); */
-  background-color: #60979a;
+    /* background-color: #60979a; */
+    /* background-color: #434C5E; */
+    background: linear-gradient(145deg, #485165, #3c4455);
   position: relative;
   margin: 0;
   height: 200px;
@@ -148,7 +156,8 @@ label {
     display: block;
     margin-top: 1rem;
     font-weight: 500;
-    color: #60979a;
+    /* color: #60979a; */
+    color: #5E81AC;
 }
 
 position period {
@@ -161,7 +170,8 @@ position period current {
     font-size: .5rem;
     margin-top: 0rem;
     display: block;
-    color: #60979a;
+    /* color: #60979a; */
+    color: #B48EAD;
 }
 
 experience h4 {
@@ -176,7 +186,8 @@ h4 position {
 }
 
 h4 position jobtitle {
-    color: #60979a;
+    /* color: #60979a; */
+    color: #B48EAD;
 }
 
 experience ul {
@@ -205,7 +216,8 @@ buzzwords span,
     font-size: .7rem;
     padding: .25rem;
     color: #ececec;
-    background-color: #60979a;
+    /* background-color: #60979a; */
+    background-color: #4C566A;
     margin-bottom: .25rem;
 }
 
