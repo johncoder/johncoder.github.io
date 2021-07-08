@@ -37,6 +37,6 @@ buzzwords span,
     border: 1px solid #ececec;
 }
 
-experience li:nth-child(4) {
+experience.work li:nth-child(4) {
     page-break-after: always;
 }
