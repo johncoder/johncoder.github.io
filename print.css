@@ -36,3 +36,7 @@ buzzwords span,
     color: #545454;
     border: 1px solid #ececec;
 }
+
+experience li:nth-child(4) {
+    page-break-after: always;
+}
