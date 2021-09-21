@@ -17,7 +17,8 @@ body {
     background: linear-gradient(145deg, #313844, #292f3a);    
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  color: #3B4252;
+  /* color: #3B4252; */
+  color: #ECEFF4;
   margin-top: 5rem;
 }
 
@@ -26,28 +27,20 @@ a, a:visited, a:hover {
     text-decoration: none;
 }
 
-resume {
+.resume {
   display: block;
   /*height: 11in;*/
   width: 8.5in;
   /*border: 1px solid rgba(0, 0, 0, .2);*/
-  background-color: #ECEFF4;
+  /* background-color: #ECEFF4; */
   margin-left: auto;
   margin-right: auto;
-  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, .2); */
-  /* box-shadow: 0px 0px 20px #2E344033; */
-  box-shadow:  41px 41px 59px #21252d, 
-             -41px -41px 59px #3b4353;
+  background: transparent;
   margin-bottom: 2rem;
   padding-bottom: .5rem;
 }
 
 header {
-  /* background-color: rgba(193, 78, 15, .6); */
-  /* background-color: rgba(255, 128, 54, 1); */
-    /* background-color: #60979a; */
-    /* background-color: #434C5E; */
-    background: linear-gradient(145deg, #485165, #3c4455);
   position: relative;
   margin: 0;
   height: 200px;
@@ -64,17 +57,17 @@ header h1 {
   line-height: 1em;
 }
 
-header subtitle {
+header .subtitle {
   display: block;
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: 500;
   text-transform: uppercase;
   word-spacing: .4rem;
-  color: rgba(0, 0, 0, .35);
 }
 
 header aside {
-    color: rgba(255, 255, 255, .65);
+    color: #8FBCBB;
+    right: 0;
     line-height: 1em;
 }
 
@@ -92,7 +85,8 @@ header ul li {
   display: inline-block;
   margin-right: 0rem;
   padding-top: .25rem;
-  color: rgba(255, 255, 255, .65);
+  /* color: rgba(255, 255, 255, .65); */
+  color: #81A1C1;
 }
 
 header svg.icon {
@@ -101,7 +95,8 @@ header svg.icon {
   padding: .25rem;
   margin-top: -1px;
   vertical-align: middle;
-  background-color: rgba(255, 255, 255, .2);
+  /* background-color: rgba(255, 255, 255, .2); */
+  background-color: #81A1C1;
 }
 
 header svg {
@@ -110,10 +105,10 @@ header svg {
   margin-right: .15rem;
 }
 
-section {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
+/* section { */
+/*   padding-left: 1.75rem; */
+/*   padding-right: 1.75rem; */
+/* } */
 
 svg.icon {
   width: 2rem;
@@ -137,17 +132,17 @@ svg {
   background-size: 167px 200px;
 }
 
-content {
+.content {
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
-objective,
-contact-info,
-education,
-experience,
-buzzwords,
-credits {
+.objective,
+.contact-info,
+.education,
+.experience,
+.buzzwords,
+.credits {
     display: block;
     padding-left: 1.75rem;
     font-size: .75rem;
@@ -162,11 +157,11 @@ label {
     color: #5E81AC;
 }
 
-position period {
+.position .period {
     font-size: .75rem;
 }
 
-position period current {
+.position .period .current {
     text-transform: uppercase;
     font-weight: 500;
     font-size: .5rem;
@@ -176,43 +171,44 @@ position period current {
     color: #B48EAD;
 }
 
-experience h4 {
+.experience h4 {
+    font-weight: 300;
+    font-size: 1.5em;
     position: relative;
 }
 
-h4 position {
-    display: inline-block;
-    position: absolute;
+.experience .position {
     font-weight: 500;
-    right: 0;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
 }
 
-h4 position jobtitle {
+.position .jobtitle {
     /* color: #60979a; */
     color: #B48EAD;
 }
 
-experience ul {
+.experience ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-objective ul {
+.objective ul {
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     list-style-type: square;
 }
 
-objective ul li {
+.objective ul li {
     padding-bottom: .45rem;
 }
 
-buzzwords {
+.buzzwords {
 }
 
-buzzwords span,
+.buzzwords span,
 .buzzword {
     display: inline-block;
     font-size: .7rem;
@@ -223,7 +219,7 @@ buzzwords span,
     margin-bottom: .25rem;
 }
 
-experience .buzzword {
+.experience .buzzword {
     margin-right: .5rem;
 }
 
@@ -234,11 +230,11 @@ footer {
     margin-right: 1.75rem;
 }
 
-credits {
-    border-top: 1px solid rgba(0, 0, 0, .05);
+.credits {
+    border-top: 1px solid rgba(255, 255, 255, .05);
     padding: .5rem;
     margin: 1rem;
-    color: rgba(0, 0, 0, .35);
+    color: rgba(255, 255, 255, .35);
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -263,23 +259,23 @@ credits {
 	padding-left: 1rem;
     }
 
-    resume {
+    .resume {
 	margin: 0;
 	width: 100%;
 	height: auto;
     }
 
-    resume content {
+    .resume .content {
 	grid-template-columns: 100%;
     }
 
-    resume content column {
+    .resume .content .column {
 	width: 100%;
 	padding-left: 1rem;
 	padding-right: 1rem;
     }
 
-    resume content column > * {
+    .resume .content .column > * {
 	padding: 0;
     }
 
@@ -287,7 +283,7 @@ credits {
 	opacity: .6;
     }
 
-    h4 position {
+    .position {
         display: block;
         position: relative;
     }

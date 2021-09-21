@@ -17,10 +17,10 @@
     <meta name="twitter:site" content="@johncoder" />
   </head>
   <body>
-    <resume>
+    <div class="resume">
       <header>
 	<h1>John Nelson</h1>
-	<subtitle>Dad / Husband / Developer</subtitle>
+	<div class="subtitle">Dad / Husband / Developer</div>
 	<aside>Seasoned remote worker<br />living in Jamestown, NY</aside>
 	<ul>
 	  <li>
@@ -36,68 +36,92 @@
 	</ul>
 	<img class="johncoder" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
       </header>
-      <content>
-	<column>
-	  <experience class="work">
+      <div class="content">
+	<div class="column">
+	  <section class="experience">
 	    <h3>General Experience</h3>
-	    <p>Nearly every position I've held included many of the same duties: write code responsibly, efficiently, and accurately. Write testable, performant, maintainable code. Fix bugs, and build features. Communicate early, often, and effectively. Document. Everything.</p>
+	    <p>
+	      Nearly every position I've held included many of the
+	    same duties: write code responsibly, efficiently, and
+	    accurately. Write testable, performant, maintainable
+	    code. Fix bugs, and build features. Communicate early,
+	      often, and effectively. Document. Everything.
+	    </p>
+
 	    <h3>Work History</h3>
-	    <p>More than 8 years of full time remote work. Please, ask me about some of my previous projects! Rather than belabor what they were, I'd like to highlight the career defining things I've learned along the way. These are what comprise my experience:</p>
-	    <ul>
-	      <li>
-		<h4>Vitally <position><jobtitle>Senior Software Engineer</jobtitle>, <period>2021 - Present</period></position></h4>
-		<p><em>Fully remote (cross timezone!)</em> Full stack TypeScript on a growing team. More to come!</p>
-	      </li>
-	      <li>
-		<h4>Abstract <position><jobtitle>Staff Software Engineer</jobtitle>, <period>2019 - 2021</period></position></h4>
-		<p><em>Fully remote (cross timezone!)</em> Designed and built backend for Yjs collaborative document editing, optimizing for scalability and performance. Deep dive in TypeScript, Go, Ruby. Git internals: vanilla git on the server side, forking go-git to add fetch progress support, git2go, targeting desktop software, and lots of performance across the board. Helping out with the Ruby API. SDK contributions. Proposing solutions and running with implementation. Rallying engineers around performance and on-call.</p>
-	      </li>
-	      <li>
-	        <h4>Arivale <position><jobtitle>Senior Software Engineer</jobtitle>, <period>2017 - 2019</period></position></h4>
-		<p><i>Fully remote (cross timezone!)</i> Adding Event Sourcing to internal services. Deep dive on full AWS with Docker. Extensive third party software integration. Rapid prototyping for new consumer services. Pub/sub via SNS and SQS in AWS.</p>
-	      </li>
-	      <li>
-                <h4>Libera, Inc<position><jobtitle>Manager, Software Engineering</jobtitle>, <period>2017</period></position></h4>
-		<p>
-		  Designing/implementing a REST API with a custom hypermedia format. Event sourcing, and polyglot persistence. Hypermedia focused domain-specific languages. Creating and managing summer internship program. Managing and mentoring developers across the country.
-		</p>
-	      </li>
-	      <li>
-	        <h4>NBC News Digital<position><jobtitle>Senior Software Engineer</jobtitle>, <period>2012 - 2017</period></position></h4>
-		<p>
-		  <em>Fully remote (cross timezone!), promoted to Senior in 2016</em>. Large scale problems: deployment tooling, performance, deprecation. New code problems: stability, robustness, operational insight. First foray into hypermedia! Adventures in building for cross-platform. Floating the monolith while building microservices.
-		</p>
-	      </li>
-	      <li>
-		<h4>DVSport<position><jobtitle>Web Developer</jobtitle>, <period>2011 - 2012</period></position></h4>
-		<p>
-		  Researched and implemented Event Sourcing and CQRS. Exercised full-stack skills, accomplishing two redesigns, and building an engaging platform for viewing video.
-		</p>
-	      </li>
-	      <li>
-		<h4>DynaVox-Mayer Johnson<position><jobtitle>ASP.NET Developer</jobtitle>, <period>2010 - 2011</period></position></h4>
-		<p>
-		  Enterprise integration patterns. Full-text search indexing. Extensive relational database modeling.
-		</p>
-	      </li>
-	      <li>
-		<h4>Gateway Ticketing Systems<position><jobtitle>Web Programmer</jobtitle>, <period>2009 - 2010</period></position></h4>
-		<p>
-		  Test-Driven Development, e-commerce. Hard learned lessons in debugging and maintenance, and cutting teeth as a web programmer.
-	        </p>
-	      </li>
-	      <li>
-		<h4>Libera, Inc<position><jobtitle>Application Developer</jobtitle>, <period>2007 - 2008</period></position></h4>
-		<p>
-		  Internship, and my frist opportunity to build a tool to improve the quality of life in development for myself and my peers.
-	        </p>
-	      </li>
-	    </ul>
-	  </experience>
-	  <experience>
+	    <p>More than 8 years of full time remote work. Please, ask me about some of my previous projects!</p>
+	    <div>
+	      <section>
+		<h4>Vitally</h4>
+		<p class="position"><span class="jobtitle">Senior Software Engineer</span>, <span class="period">2021 - Present</span></p>
+		<p><em>Fully Remote</em></p>
+		<p>Full stack TypeScript on a growing team. More to come!</p>
+	      </section>
+	      <section>
+		<h4>Abstract</h4>
+		<p class="position"><span class="jobtitle">Staff Software Engineer</span>, <span class="period">2019 - 2021</span></p>
+		<p><em>Fully Remote</em></p>
+		<p>Established a biweekly performance meeting that resulted in numerous initiatives improving performance across the product. Ran a weekly on-call meeting with engineers and ops. Designed and proposed implementations for the platform. Volunteered to help onboard new team members. Mentored individuals that were interested in the track to becoming a Software Engineer.</p>
+		<p>Designed and built a scalable backend for collaborative document editing based on <a href="https://yjs.dev/">Yjs</a> and Redis. On this project, I got to deep dive in TypeScript and CRDT implementations. Built a new pipeline for uploading images using pre-signed URLs. Prior to working on design process tools, I worked on features for our Ruby API, and supporting Go services, and PostgreSQL database migrations. Used monitoring and tracing tools to support services in production. Some Terraform and AWS contributions. Built an automated backup strategy with a gradual, probablistic rollout.</p>
+		<p>On the client side, I used knowledge of the git protocol to optimize fetch operations in a client side Go application. Also worked on opening untracked files, fetching branches, and experimented with shallow repositories and deepening. Troubleshooting git repositories. Implemented progress reporting for fetch operations in a fork of go-git. JavaScript SDK contributions.</p>
+	      </section>
+	      <section>
+	        <h4>Arivale</h4>
+		<p class="position"><span class="jobtitle">Senior Software Engineer</span>, <span class="period">2017 - 2019</span></p>
+		<p><em>Fully Remote</em></p>
+		<p>Designed and proposed engineering projects. Mentored several engineers through frequent pairing sessions. Represented engineering among cross functional working groups, translating non-technical problems into actionable engineering efforts.</p>
+		<p>Built integrations and server side features for a real-time chat mobile app. Supported and enhanced internal productivity tools for coach caseload management. Reverse engineered and implemented a blood draw appointment scheduling application. Became the owner of internal fulfillment services for shipping and tracking orders.</p>
+		<p>Added Event Sourcing to internal services. Developed on a full AWS and Docker stack. Worked on extensive third party software integrations. Rapidly prototyped new consumer services. Built cross service communication using pub/sub via SNS and SQS in AWS.</p>
+	      </section>
+	      <section>
+                <h4>Libera, Inc</h4>
+		<p class="position"><span class="jobtitle">Manager, Software Engineering</span>, <span class="period">2017</span></p>
+		<p><em>Semi-remote</em></p>
+		<p>Lead an engineering department distributed across the country. Prioritized and advised enhancement and bug fixes in a legacy system. Mentored engineers expanding their skillsets. Created a summer internship program. Worked with other department managers on responding to RFPs. Worked with product managers to groom backlogs and do sprint planning.</p>
+		<p>Made individual contributions to pave the way for a more modern tech stack. Designed/implemented a REST API with a custom hypermedia format. Incorporated event sourcing, and polyglot persistence. Built productivity tools to improve team capacity for doing concurrent work. Built a service for extracting fillable PDF fields and generating filled PDFs.</p>
+	      </section>
+	      <section>
+	        <h4>NBC News Digital</h4>
+		<p class="position"><span class="jobtitle">Senior Software Engineer</span>, <span class="period">2012 - 2017</span></p>
+		<p><em>Fully Remote</em></p>
+		<p>Started out as a member of the platform team maintaining and enhancing a .NET ecosystem. Identified and resolved issues with RavenDB replication. Increased operational transparency related to replication state. Coordinated a major upgrade to RavenDB. Supported ops initiatives, and optimized deployment tooling for continuous delivery.</p>
+		<p>Built and optimized a node.js rendering service for nbcnews.com using Redis, including productivity tooling. Achieved a sub-second TTFB on server rendered content. Later migrated from one internal API to a broader organizational content hypermedia API. Built deployment tooling based on Windows Server, and later migrated it all to Linux in AWS.</p>
+		<p>Assumed responsibility for a number of supporting services, including a video processing pipeline, and ad system integrations. Built a prototype for sending AMP content to Google for fast indexing.</p>
+		<p>Worked on elections coverage for 2014 and 2016. Consumed Decision Desk data in real-time for rendering on nbcnews.com. Instrumented services to measure our ability to render updated results in under 15 seconds.</p>
+	      </section>
+	      <section>
+		<h4>DVSport</h4>
+		<p class="position"><span class="jobtitle">Web Developer</span>, <span class="period">2011 - 2012</span></p>
+		<p>&nbsp;</p>
+		<p>Worked as one of two full-stack engineers responsible for building a web platform for sharing and viewing sports team footage. Designed and implemented the API endpoints, UI/UX, SDK, CI/CD pipeline, database management, and more. Researched and implemented Event Sourcing and CQRS to power activity streams, monitoring, and deploying retroactive features. Accomplished two full redesigns.</p>
+		<p>Built prototype for a collaborative still shot viewing application with telestration. Also built a prototype for a coaching application that utilized a live streamed feed.</p>
+	      </section>
+	      <section>
+		<h4>DynaVox-Mayer Johnson</h4>
+		<p class="position"><span class="jobtitle">ASP.NET Developer</span>, <span class="period">2010 - 2011</span></p>
+		<p>&nbsp;</p>
+		<p>Worked on an internal order management system. Built features for internal end users. Implemented full-text search indexing. Participated in extensive relational database modeling.</p>
+	      </section>
+	      <section>
+		<h4>Gateway Ticketing Systems</h4>
+		<p class="position"><span class="jobtitle">Web Programmer</span>, <span class="period">2009 - 2010</span></p>
+		<p>&nbsp;</p>
+		<p>Worked on a web-based e-commerce platform for ticketing in amusement parks and transportation. Integrated with third party services and payment providers.</p>
+		<p>Spent time discovering industry best practices, such as Test-Driven Development, and utilizing design patterns. Learned advanced techniques in .NET and brought them to the team to improve performance and maintainability.</p>
+	      </section>
+	      <section>
+		<h4>Libera, Inc</h4>
+		<p class="position"><span class="jobtitle">Application Developer</span>, <span class="period">2007 - 2008</span></p>
+		<p>&nbsp;</p>
+		<p>This was my internship, diving deep into rapid application development and learning to build line of business applications using relational databases such as Microsoft SQL Server and Oracle. Built a log viewing tool to improve the quality of life in development for myself and my peers.</p>
+	      </section>
+	  </section>
+	  </section>
+	  <section class="experience">
 	    <h3>Open Source</h3>
 
 	    <ul>
+	      <li><span class="buzzword">Lisp</span><a href="https://github.com/johncoder/cantrip">github.com/johncoder/cantrip</a>, Emacs package</li>
               <li><span class="buzzword">Go</span><a href="https://github.com/goabstract/go-git/commits?author=johncoder">github.com/goabstract/go-git</a>, fetch progress and misc</li>
               <li><span class="buzzword">Go</span><a href="https://github.com/johncoder/thrash">github.com/johncoder/thrash</a>, load testing</li>
 	      <li><span class="buzzword">C#</span><a href="https://github.com/johncoder/mimeo">github.com/johncoder/mimeo</a>, templating library</li>
@@ -110,107 +134,110 @@
               <li><a href="https://johncoder.com/on-empowerment-through-declarative-programming/">On Empowerment Through Declarative Programming</a></li>
             </ul>
 	  </experience>
-	</column>
-	<column>
-	  <objective>
-	    <h3>Professional Objective</h3>
-            <p>
-                Solve interesting and meaningful problems while establishing myself as an influential contributor on a team of exceptional developers. Continue mentoring and teaching others with interest in Software Engineering.
-            </p>
-	  </objective>
-	  <contact-info>
-	      <h3>Contact</h3>
-	      <label>Email</label>
-	      <div><a href="mailto:jnelson@johncoder.com">jnelson@johncoder.com</a></div>
-	      <label>Website</label>
-	      <div><a href="http://johncoder.com/">http://johncoder.com/</a></div>
-	      <label>Location</label>
-	      <div>Jamestown, NY</div>
-	  </contact-info>
-	  <education>
-	      <h3>Education</h3>
-	      <label>Bachelor of Science, Computer Science</label>
-	      <div>Clarion University of PA</div>
-	      <div>Fall 2005 - Fall 2008</div>
-	      <!-- <div>3.9 GPA, Major</div>
-	           <div>3.8 GPA, Overall</div> -->
-	  </education>
-	  <buzzwords>
-	      <h3>Primary Skills</h3>
-	      <span>C</span>
-	      <span>Go</span>
-              <span>C#</span>
-              <span>JavaScript</span>
-	      <span>Node.js</span>
-              <span>Python</span>
-              <span>HTML</span>
-              <span>CSS</span>
-	      <span>RavenDB</span>
-	      <span>MongoDB</span>
-	      <span>SQL</span>
-	      <span>Redis</span>
-              <span>Docker</span>
-	      <span>Automation</span>
-	      <span>Linux</span>
-              <span>Windows</span>
-              <span>macOS</span>
-	      <span>Amazon Web Services</span>
-              <span>REST</span>
-              <span>API</span>
-              <span>Hypermedia</span>
-              <span>HATEOAS</span>
-	      <span>Event Sourcing</span>
-	      <span>CQRS</span>
-	      <span>TDD</span>
-	      <span>Functional</span>
-              <span>Object-Oriented</span>
+	    </div>
+	    <div class="column">
+	      <section class="objective">
+		<h3>Professional Objective</h3>
+		<p>
+                  Solve interesting and meaningful problems while establishing myself as an influential contributor on a team of exceptional developers. Continue mentoring and teaching others with interest in Software Engineering.
+		</p>
+	      </section>
+	      <section class="contact-info">
+		<h3>Contact</h3>
+		<label>Email</label>
+		<div><a href="mailto:jnelson@johncoder.com">jnelson@johncoder.com</a></div>
+		<label>Website</label>
+		<div><a href="http://johncoder.com/">http://johncoder.com/</a></div>
+		<label>Location</label>
+		<div>Jamestown, NY</div>
+	      </section>
+	      <section class="education">
+		<h3>Education</h3>
+		<label>Bachelor of Science, Computer Science</label>
+		<div>Clarion University of PA</div>
+		<div>Fall 2005 - Fall 2008</div>
+		<!-- <div>3.9 GPA, Major</div>
+	             <div>3.8 GPA, Overall</div> -->
+	      </section>
+	      <section class="buzzwords">
+		<h3>Programming Languages</h3>
+		<span>Go</span>
+		<span>C#</span>
+		<span>JavaScript</span>
+		<span>TypeScript</span>
+		<span>Node.js</span>
+		<span>Ruby</span>
+		<span>Python</span>
+		<span>HTML</span>
+		<span>CSS</span>
+		<span>SQL</span>
+		<span>Lisp</span>
+		<span>C</span>
 
-	      <h3>Secondary Skills</h3>
-	      <span>Lisp</span>
-              <span>C++</span>
-              <span>Ruby</span>
-              <span>Java</span>
-	      <span>Design</span>
-              <span>UX</span>
-	  </buzzwords>
-	  <br class="buzzword-break" />
-	  <buzzwords>
-	    <h3>Interests</h3>
-	    <span>Hypermedia</span>
-	    <span>Functional Programming</span>
-	    <span>UX</span>
-	    <span>Event Sourcing</span>
-	    <span>Speaking</span>
-	    <span>Writing</span>
-	  </buzzwords>
-          <experience>
-            <h3>Speaking Engagements</h3>
-            <session>
-              <label>C# Generics and Extension Methods</label>
-              <div>Philadelphia Code Camp</div>
-            </session>
-            <session>
-              <label>C# Live Coding Project (Co-Presenter)</label>
-              <div>Philadelphia Code Camp</div>
-            </session>
-            <session>
-              <label>Introduction to RavenDB</label>
-              <div>Pittsburgh Code Camp</div>
-            </session>
-            <session>
-              <label>Building NuGet Packages</label>
-              <div>Pittsburgh Code Camp</div>
-            </session>
-          </experience>
-	</column>
-      </content>
-      <credits>
-	designed by me
-      </credits>
-    </resume>
-    <footer>
-      Icons made by
-      <a href="http://www.flaticon.com/authors/icomoon">icomoon</a>,
+		<h3>Primary Skills</h3>
+		<span title="Test-Driven Development">TDD</span>
+		<span title="Functional Programming">FP</span>
+		<span title="Object Oriented Programming">OOP</span>
+		<span>RavenDB</span>
+		<span>MongoDB</span>
+		<span>Redis</span>
+		<span>Docker</span>
+		<span>Automation</span>
+		<span>Linux</span>
+		<span>Windows</span>
+		<span>macOS</span>
+		<span title="Amazon Web Services">AWS</span>
+		<span title="Representational State Transfer">REST</span>
+		<span>API</span>
+		<span>Hypermedia</span>
+		<span title="Hypermedia As The Engine Of Application State">HATEOAS</span>
+		<span>Event Sourcing</span>
+		<span title="Command-Query Responsibility Segregation">CQRS</span>
+
+		<h3>Secondary Skills</h3>
+		<span>C++</span>
+		<span>Java</span>
+		<span>Design</span>
+		<span>UX</span>
+	      </section>
+	      <br class="buzzword-break" />
+	      <section class="buzzwords">
+		<h3>Interests</h3>
+		<span>Hypermedia</span>
+		<span>Functional Programming</span>
+		<span>UX</span>
+		<span>Event Sourcing</span>
+		<span>Speaking</span>
+		<span>Writing</span>
+	      </section>
+              <section class="experience">
+		<h3>Speaking Engagements</h3>
+		<div class="session">
+		  <label>C# Generics and Extension Methods</label>
+		  <div>Philadelphia Code Camp</div>
+		</div>
+		<div class="session">
+		  <label>C# Live Coding Project (Co-Presenter)</label>
+		  <div>Philadelphia Code Camp</div>
+		</div>
+		<div class="session">
+		  <label>Introduction to RavenDB</label>
+		  <div>Pittsburgh Code Camp</div>
+		</div>
+		<div class="session">
+		  <label>Building NuGet Packages</label>
+		  <div>Pittsburgh Code Camp</div>
+		</div>
+              </section>
+	    </div>
+	</div>
+	<div class="credits">
+	  designed by me
+	</div>
+      </div>
+      <footer>
+	Icons made by
+	<a href="http://www.flaticon.com/authors/icomoon">icomoon</a>,
       <a href="http://www.flaticon.com/authors/simpleicon">simpleicon</a>,
       <a href="http://www.flaticon.com/authors/elegant-themes">elegant-themes</a>
       from
