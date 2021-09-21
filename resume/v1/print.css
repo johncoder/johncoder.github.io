@@ -1,0 +1,47 @@
+body {
+    color: #333333;
+    margin-top: 0;
+}
+
+header,
+header h3,
+header svg,
+svg,
+header subtitle,
+header aside,
+header ul li {
+    color: #545454;
+    fill: #545454;
+    stroke: #545454;
+}
+
+footer {
+    display: none;
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
+
+resume {
+    height: 10.5in;
+    width: auto;
+    box-shadow: none;
+    padding-right: .5rem;
+}
+
+buzzwords span,
+.buzzword {
+    color: #545454;
+    border: 1px solid #ececec;
+}
+
+.buzzword-break {
+    display: block;
+    line-height: 2rem;
+}
+
+experience.work li:nth-child(4) {
+    page-break-after: always;
+}
