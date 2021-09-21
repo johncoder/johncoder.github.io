@@ -10,11 +10,12 @@ html {
   /*transform: scale(.80);
   margin-top: -6rem;*/
   text-rendering: optimizeLegibility;
+  background: linear-gradient(145deg, #313844, #292f3a);    
 }
 
 body {
-    /* background-color: #E5E9F0; */
-    background: linear-gradient(145deg, #313844, #292f3a);    
+  /* background-color: #E5E9F0; */
+  background: linear-gradient(145deg, #313844, #292f3a);    
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   /* color: #3B4252; */
