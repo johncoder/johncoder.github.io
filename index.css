@@ -138,6 +138,11 @@ ul {
     text-transform: lowercase;
 }
 
+.about-me .blurb {
+    margin-top: 2rem;
+    max-width: 350px;
+}
+
 .about-me ul {
     margin-top: 2rem;
     display: flex;
